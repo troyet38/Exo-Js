@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cours javascript</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> -->
+    <script type="module" src="src/index.js"></script>
+</head>
+<body>
+    <h1>Interagir avec le DOM</h1>
+    <div class="grid">
+        <div class="exo">
+            <div class="container1-bouton">
+                <button class="btn btn-1">red</button>
+                <button class="btn btn-1">green</button>
+                <button class="btn btn-1">blue</button>
+            </div>
+            <div class="div-to-color-1 colored"></div>
+            
+        </div>
+        <div class="exo">
+            
+            <input type="text" class="text" >
+            <div class="affiche">Texte a afficher</div>
+        </div>
+        <div class="exo">
+            
+            <input type="range" class="chiffre" name="chiffre"
+            min="10" max="50" value="40" step="1">
+
+            <div class="nombre">40</div>
+            
+        </div>
+        <div class="exo">
+            <form action="" class="form">
+                <input type="text" class="text2-A">
+                <input type="text" class="text2-B">
+                <button type="submit" class="btn btn-2">OK</button>
+
+            </form>  
+
+            <div class="affiche2">Texte a afficher</div>
+        </div>
+        <div class="exo">
+            <input type="range" class="chiffre2" name="chiffre2"
+            min="0" max="100" value="50" step="1">
+
+            <div class="nombre2">50</div>
+        </div>
+        <div class="exo">
+            <label for="language">language de programme: </label>
+
+            <select name="language" class="language">
+                <option value="">--Please choose an option--</option>
+                <option value="JS">JS</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                
+            </select>
+            <div class="affiche3">Texte a afficher</div>
+        </div>
+        <div class="exo">
+            <input type="color" class="carre" name="carre">
+            <div class="div-to-color-7 colored"></div>
+        </div>
+        <div class="exo">
+            <div class="container1-bouton">
+               
+                <button class="btn btn-3" value="red">Salut</button>
+                <button class="btn  btn-3" value="blue">tout</button>
+                <button class="btn btn-3" value="gray">le monde</button>
+            </div>
+            <div class="div-to-color-8 colored"></div>
+            
+        </div>
+        <div class="exo">
+            <div class="container9">
+                <label for="">Mes interets :</label>
+               
+                
+                    
+                <input type="checkbox"  name="Dev" class="check" value="CSS">
+
+                <label for="DEV">Dev</label>
+
+                <input type="checkbox" name="Music" class="check" value="Daft punk">
+                <label for="Music">Music</label>
+                
+            </div>
+            <div class="affiche4"></div>
+
+
+        </div>
+    </div>
+</body>
+</html>

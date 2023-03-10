@@ -4,8 +4,10 @@ let result1 = document.querySelector('.div-to-color-1');
 let text1 = document.querySelector('.text');
 let affiche = document.querySelector('.affiche');
 
-let chiffre = document.querySelector('.chiffre');
-let nb = document.querySelector('.nombre');
+let affiche5 = document.querySelector(".affiche5");
+let text3 = document.querySelector('.text2');
+let btn3 = document.querySelector('.btn-3');
+
 
 let form = document.querySelector('.form');
 let text2A =document.querySelector('.text2-A');
@@ -43,8 +45,10 @@ text1.addEventListener('input',(el) =>{
     affiche.textContent = el.target.value
 })
 
-chiffre.addEventListener('change',(el2)=>{
-    nb.textContent = el2.target.value
+btn3.addEventListener('click',(e) => {
+    let newDiv = document.createElement("div");
+    newDiv.textContent = text3.value
+    affiche5.appendChild(newDiv);
 })
 
 

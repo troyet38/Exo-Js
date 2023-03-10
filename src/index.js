@@ -83,8 +83,14 @@ btns2.forEach(element => {
 
 
 
-check.forEach(element => {
-    element.addEventListener('click',(e) => {
-        affiche4.textContent = e.target.value
+check.forEach((el) => {
+    el.addEventListener('change',(e) => {
+        affiche4.textContent = `${check[0].checked ? check[0].value :''} ${(check[0].checked && check[1].checked)? '-': ''}${check[1].checked ? check[1].value :''}`
+
+        
+        
+
+
+         
     })
 });
